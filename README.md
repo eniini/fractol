@@ -1,7 +1,6 @@
 # fractol
-ractal renderer using minilibx  
-Usage: fractol [multi] <set>  
-  where <set> is one of Mandelbrot/burning-ship/tricorn.  
-  [multi] enables adjusting the power to which the fractal is calculated (=multibrot variants)  
-  all fractal sets can be switched to their corresponding Julia sets, where the set is calculated for the current coordinates of the cursor.  
-Includes Mandelbrot/tricorn/burning-ship sets that can be adjusted to variable positive and negative powers and toggled to their corresponding Julia variants
+#### Fractal renderer using minilibx  
+<code>Usage: fractol [multi] \<set\></code>  
+  where <code>\<set\></code>  is one of <code>mandelbrot | burning-ship | tricorn</code>  
+  <code>[multi]</code> enables adjusting the power to which the fractal is calculated. This creates the 'multibrot' variants of normal sets.  
+  All fractal sets can be switched to their corresponding Julia sets, where the set is calculated for the current coordinates of the cursor.  
