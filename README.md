@@ -1,5 +1,5 @@
 # fractol
-#### Fractal renderer using minilibx  
+#### Fractal renderer using MinilibX  
 <code>Usage: fractol [multi] \<set\></code>  
   where <code>\<set\></code>  is one of <code>mandelbrot | burning-ship | tricorn</code>  
   Including <code>multi</code> flag enables adjusting the power to which the fractal is calculated. This creates the 'multibrot' variants of normal sets.  
