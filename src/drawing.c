@@ -6,7 +6,7 @@
 /*   By: eniini <eniini@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/23 14:08:10 by eniini            #+#    #+#             */
-/*   Updated: 2021/05/18 15:18:31 by eniini           ###   ########.fr       */
+/*   Updated: 2021/05/22 18:18:42 by eniini           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,9 @@ int	drawloop(t_fract *data)
 	data->img.img = mlx_new_image(data->mlx, WIN_W, WIN_H);
 	data->img.addr = mlx_get_data_addr(data->img.img, &data->img.bpp,
 			&data->img.l_len, &data->img.endian);
+	if (data->gfxinf)
+		free(data->gfxinf);
+	data->gfxinf = ft_init_1d_info(WIN_W, WIN_H, data->img.bpp, data->img.addr);
 	draw_fractal(data);
 	if (data->draw_ui % 2)
 		draw_ui_bg(data);

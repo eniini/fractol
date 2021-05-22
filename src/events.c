@@ -6,7 +6,7 @@
 /*   By: eniini <eniini@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/23 14:07:32 by eniini            #+#    #+#             */
-/*   Updated: 2021/05/21 13:25:52 by eniini           ###   ########.fr       */
+/*   Updated: 2021/05/22 18:18:45 by eniini           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,7 +100,7 @@ static int	deal_extrakeys(int keypress, t_fract *data)
 {
 	if (keypress == 0x70)
 	{
-		if ((ft_create_bmp("screenshot.bmp", data->img.bpp, data->img.addr)))
+		if ((ft_create_bmp("screenshot.bmp", data->gfxinf)))
 			ft_getout(strerror(errno));
 		ft_putendl("screenshot created!");
 	}

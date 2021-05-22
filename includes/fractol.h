@@ -6,7 +6,7 @@
 /*   By: eniini <eniini@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/29 17:23:09 by eniini            #+#    #+#             */
-/*   Updated: 2021/05/21 13:46:08 by eniini           ###   ########.fr       */
+/*   Updated: 2021/05/22 18:18:37 by eniini           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,9 @@
 
 # define WH 0xffffff
 # define UI	0xd11b1b
+
+# define WIN_W 800
+# define WIN_H 640
 
 typedef struct s_img
 {
@@ -73,6 +76,7 @@ typedef struct s_fract
 	t_render	render;
 	t_shape		shape;
 	t_color		col;
+	t_gfxinfo	*gfxinf;
 	double		power;
 	double		precision;
 	double		x;
