@@ -39,9 +39,6 @@ static double	do_comply(t_fract *d, double c_x, double c_y, double constant)
 /*
 **	Calculates all standard escape-time fractal sets, including their
 **	Julia variants.
-**	return (n + 1 - log(log2(fabs(complx*complx + comply*comply))));
-**	return (n - log2(log2(sqrt(complx * complx + comply * comply))));
-**	return (n - log(log((complx * complx) + (comply * comply)) / 2) / log(2));
 */
 
 double	calculate_fractal(t_fract *data, double complx, double comply)
