@@ -78,7 +78,7 @@ t_fract	*init_fractol(int argc, char **argv)
 
 	data = ft_memalloc(sizeof(t_fract));
 	if (!data)
-		ft_getout(stderror(errno));
+		ft_getout(strerror(errno));
 	ft_memset(data, 0, sizeof(t_fract));
 	check_argument(data, argc, argv);
 	data->mlx = mlx_init();
